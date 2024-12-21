@@ -1,0 +1,13 @@
+Caching is storing the result of an expensive operation and returning
+        the cached result when the same operation is requested again (it's faster).
+
+3 Data Sources
+  - memory
+  - file system (fs)
+  - network 
+
+  NB: getting data from network is slower than getting data from fs
+
+Next.js comes with its buit-in data cache - automatically store the result in cache,
+        based on fs. However this can be disabled using {cache: 'no-store'} or can be controlled
+        as to when the app needs to fetch data from fs cache - e.g fetch data every 10 seconds.
